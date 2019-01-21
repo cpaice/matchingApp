@@ -1,0 +1,72 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="PeopleMatchController">
+    <aura:attribute name="UserContact" type="Contact" access="global"/>
+
+    <aura:handler name="init" value="this" action="{!c.doInit}"/>
+
+
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        Person Match - {!v.UserContact.Name}
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <p>You have completed 50% of your possible matches.</p>
+            <lightning:progressBar value="50" size="large" />
+            <article class="slds-card slds-card_boundary slds-m-top--medium">
+                <div class="slds-card__body slds-card__body_inner">
+                    <div class="slds-grid slds-wrap slds-m-top--medium">
+                        <div class="slds-col slds-size_1-of-1">
+                            <div title="PersonHeader">
+                                <div class="slds-media slds-media_center">
+                                    <div class="slds-media__figure">
+                                        <span class="slds-avatar xLgAvatar">
+                                        <img alt="v.UserContact.Name" src="{!v.UserContact.ProfilePhoto__c}" title="User avatar" />
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <div class="slds-grid slds-wrap">
+                                            <div class="slds-col slds-size_2-of-3">
+                                                <p class="slds-text-heading_large">{!v.UserContact.Name}</p>
+                                                <p>{!v.UserContact.Title}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-3">
+                                                <div title="PersonInfo">
+                                                    <p class="slds-text-heading_small">{!v.UserContact.Account.Name}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size--1-of-1 slds-m-top--small">
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning:button label="I don't know this person" class="fullWidthButton slds-m-bottom--small"/>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning:button label="This person is an acquaintance" class="fullWidthButton slds-m-bottom--small"/>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning:button label="I know this person" class="fullWidthButton slds-m-bottom--small"/>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning:button label="I know this person well" class="fullWidthButton slds-m-bottom--small"/>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning:button label="This person is a close friend/colleague" class="fullWidthButton"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+
+    </article>
+
+</aura:component>
