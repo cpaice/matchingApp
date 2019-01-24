@@ -2,8 +2,13 @@
     <aura:attribute name="userContact" type="Contact" access="global"/>
     <aura:attribute name="matchContacts" type="List" access="global"/>
     <aura:attribute name="currentMatchContact" type="Contact" access="global"/>
+    <aura:attribute name="buttonOptions" type="List" access="global"/>
+    <aura:attribute name="showSuccess" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="matchPercentage" type="Integer" access="global" default="0"/>
 
     <aura:handler name="init" value="this" action="{!c.doInit}"/>
+    <aura:handler name="saveMatchEvent" event="c:PeopleMatch_Evt_SaveMatch" action="{!c.handleSave}"/>
+    <aura:handler name="successEndEvent" event="c:PeopleMatch_SuccessEnd" action="{!c.endSuccessAnimation}"/>
 
 
     <article class="slds-card">
@@ -17,9 +22,28 @@
             </header>
         </div>
         <div class="slds-card__body slds-card__body_inner">
-            <p>You have completed 50% of your possible matches.</p>
-            <lightning:progressBar value="50" size="large" />
-            <c:PeopleMatch_MatchableContact contactToMatch="{!v.currentMatchContact}"/>
+            <aura:if isTrue="{!v.userContact.Matching_Opt_In__c}">
+                <aura:if isTrue="{!v.currentMatchContact != null}">
+                    <aura:if isTrue="{!v.showSuccess}">
+                        <div id="successCheck" style="min-height:20rem;">
+                            <c:PeopleMatch_SuccessAnimation/>
+                        </div>
+                        <aura:set attribute="else">
+                            <p>You have completed {!v.matchPercentage}% of your possible matches.</p>
+                            <lightning:progressBar value="{!v.matchPercentage}" size="large" />
+                            <c:PeopleMatch_MatchableContact contactToMatch="{!v.currentMatchContact}" relButtonOptions="{!v.buttonOptions}"/>
+                        </aura:set>
+                    </aura:if>
+                    <aura:set attribute="else">
+                        You have no more contacts to match.
+                    </aura:set>
+                </aura:if>
+                <aura:set attribute="else">
+                    <p>You have not yet opted in. Opt in.</p>
+                </aura:set>
+            </aura:if>
+
+
         </div>
 
     </article>

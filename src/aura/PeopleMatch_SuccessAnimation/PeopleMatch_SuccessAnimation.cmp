@@ -1,0 +1,21 @@
+<aura:component description="PeopleMatch_SuccessAnimation" implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="showThing" type="Boolean" default="true"/>
+
+    <aura:handler name="init" value="this" action="{!c.doInit}"/>
+    <aura:registerEvent name="successEndEvent" type="c:PeopleMatch_SuccessEnd"/>
+
+    <article class="slds-card">
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="check_mark">
+                <aura:if isTrue="{!v.showThing}">
+                    <div class="sa-icon sa-success animate">
+                        <span class="sa-line sa-tip animateSuccessTip"></span>
+                        <span class="sa-line sa-long animateSuccessLong"></span>
+                        <div class="sa-placeholder"></div>
+                        <div class="sa-fix"></div>
+                    </div>
+                </aura:if>
+            </div>
+        </div>
+    </article>
+</aura:component>

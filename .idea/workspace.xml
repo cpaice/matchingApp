@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23f72849-2f8e-4aca-8e89-c8d865b0c570" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContact.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContact.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_Evt_SaveMatch/PeopleMatch_Evt_SaveMatch.evt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_Evt_SaveMatch/PeopleMatch_Evt_SaveMatch.evt-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContactController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimation.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimation.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimationController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessEnd/PeopleMatch_SuccessEnd.evt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessEnd/PeopleMatch_SuccessEnd.evt-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/MatchingApp/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/MatchingApp/OfflineSymbolTable.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MatchingApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MatchingApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContact.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContact.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/PeopleMatchController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/PeopleMatchController.cls" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,44 +30,47 @@
     <session id="1993603012">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cls" value="1" />
-          <entry key="cmp" value="2" />
-          <entry key="css" value="1" />
-          <entry key="js" value="2" />
+          <entry key="cls" value="2" />
+          <entry key="cmp" value="7" />
+          <entry key="css" value="2" />
+          <entry key="evt" value="3" />
+          <entry key="js" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Apex" value="1" />
-          <entry key="CSS" value="1" />
-          <entry key="JavaScript" value="2" />
-          <entry key="Lightning" value="2" />
+          <entry key="Apex" value="2" />
+          <entry key="CSS" value="2" />
+          <entry key="JavaScript" value="9" />
+          <entry key="Lightning" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cls" value="749" />
-          <entry key="cmp" value="1758" />
-          <entry key="css" value="164" />
-          <entry key="js" value="209" />
+          <entry key="cls" value="2135" />
+          <entry key="cmp" value="2821" />
+          <entry key="css" value="165" />
+          <entry key="evt" value="76" />
+          <entry key="js" value="1742" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Apex" value="749" />
-          <entry key="CSS" value="164" />
-          <entry key="JavaScript" value="209" />
-          <entry key="Lightning" value="1758" />
+          <entry key="Apex" value="2135" />
+          <entry key="CSS" value="165" />
+          <entry key="JavaScript" value="1742" />
+          <entry key="Lightning" value="2897" />
         </counts>
       </usages-collector>
     </session>
@@ -70,17 +80,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.cmp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContact.cmp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+            <state relative-caret-position="527">
+              <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#aura:if#0;n#aura:if#0;n#aura:if#0;n#div#1;n#article#0;n#aura:component#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,17 +92,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+            <state relative-caret-position="272">
+              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+            <state relative-caret-position="765">
+              <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -106,17 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/PeopleMatchController.cls">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="438">
+              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -126,11 +121,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Lightning Style" />
-        <option value="Lightning Controller" />
         <option value="Apex Class" />
         <option value="Lightning Helper" />
+        <option value="Lightning Component Event" />
         <option value="Lightning Component" />
+        <option value="Lightning Controller" />
+        <option value="Lightning Style" />
+        <option value="Lightning Application Event" />
         <option value="Apex Metadata" />
       </list>
     </option>
@@ -139,10 +136,15 @@
     <findStrings>
       <find>UserContact</find>
       <find>ContactToMatch</find>
+      <find>storeResponse</find>
+      <find>.sa</find>
+      <find>\9</find>
     </findStrings>
     <replaceStrings>
       <replace>ContactToMatch</replace>
       <replace>contactToMatch</replace>
+      <replace>res</replace>
+      <replace>.THIS .sa</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -152,11 +154,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.css" />
-        <option value="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchController.js" />
-        <option value="$PROJECT_DIR$/src/classes/PeopleMatchController.cls" />
-        <option value="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.cmp" />
-        <option value="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchHelper.js" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch_Evt_SaveMatch/PeopleMatch_Evt_SaveMatch.evt" />
         <option value="$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContact.cmp" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContactController.js" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimation.css" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessEnd/PeopleMatch_SuccessEnd.evt" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimation.cmp" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimationController.js" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.cmp" />
+        <option value="$PROJECT_DIR$/src/classes/PeopleMatchController.cls" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchController.js" />
+        <option value="$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchHelper.js" />
       </list>
     </option>
   </component>
@@ -166,7 +174,7 @@
         <entry key="MatchingApp">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1548263479927" />
+              <option name="moduleContentsLastModified" value="1548354869700" />
             </ModuleWorkspaceSettings>
           </value>
         </entry>
@@ -181,9 +189,12 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/PEOPLEMATCH" value="1548263945376" />
-                      <entry key="AURA/PEOPLEMATCH_MATCHABLECONTACT" value="1548265712626" />
-                      <entry key="CLASSES/PEOPLEMATCHCONTROLLER.CLS" value="1548263647770" />
+                      <entry key="AURA/PEOPLEMATCH" value="1548370038086" />
+                      <entry key="AURA/PEOPLEMATCH_EVT_SAVEMATCH" value="1548267587175" />
+                      <entry key="AURA/PEOPLEMATCH_MATCHABLECONTACT" value="1548267839415" />
+                      <entry key="AURA/PEOPLEMATCH_SUCCESSANIMATION" value="1548361802539" />
+                      <entry key="AURA/PEOPLEMATCH_SUCCESSEND" value="1548356012886" />
+                      <entry key="CLASSES/PEOPLEMATCHCONTROLLER.CLS" value="1548369579039" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="MODULE" />
@@ -983,10 +994,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="175" />
-    <option name="y" value="30" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -997,7 +1008,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1021,7 +1031,35 @@
               <item name="MatchingApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="PeopleMatch" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatchingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatchingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="PeopleMatch_Evt_SaveMatch" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatchingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatchingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
               <item name="PeopleMatch_MatchableContact" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatchingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatchingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="PeopleMatch_SuccessAnimation" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatchingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatchingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="PeopleMatch_SuccessEnd" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
             </path>
             <path>
               <item name="MatchingApp" type="b2602c69:ProjectViewProjectNode" />
@@ -1033,11 +1071,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548265169615" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548370168887" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -1069,10 +1108,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2758389" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27878466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1090,7 +1129,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="SOQL Query" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Anonymous Apex" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="Problems" order="14" />
@@ -1108,34 +1147,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.cmp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/PeopleMatchController.cls">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1143,10 +1154,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch_Evt_SaveMatch/PeopleMatch_Evt_SaveMatch.evt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContactController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch_MatchableContact/PeopleMatch_MatchableContact.cmp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        <state relative-caret-position="527">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch_SuccessEnd/PeopleMatch_SuccessEnd.evt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimation.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4488">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch_SuccessAnimation/PeopleMatch_SuccessAnimationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatch.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#aura:if#0;n#aura:if#0;n#aura:if#0;n#div#1;n#article#0;n#aura:component#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/PeopleMatchController.cls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/PeopleMatch/PeopleMatchHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
         </state>
       </provider>
     </entry>

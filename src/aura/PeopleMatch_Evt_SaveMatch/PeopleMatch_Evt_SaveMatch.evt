@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="PeopleMatch_Evt_SaveMatch">
+    <aura:attribute access="global" name="matchedContact" type="Contact" required="true"/>
+    <aura:attribute access="global" name="relationshipVal" type="String" required="true"/>
+</aura:event>

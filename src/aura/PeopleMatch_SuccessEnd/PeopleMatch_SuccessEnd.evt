@@ -1,0 +1,2 @@
+<aura:event type="APPLICATION" description="PeopleMatch_SuccessEnd">
+</aura:event>

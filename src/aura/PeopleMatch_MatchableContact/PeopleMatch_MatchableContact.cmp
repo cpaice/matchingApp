@@ -1,39 +1,35 @@
 <aura:component description="PeopleMatch_MatchableContact" access="global">
     <aura:attribute name="contactToMatch" type="Contact" access="global"/>
+    <aura:attribute name="relButtonOptions" type="List" access="global"/>
+
+    <aura:registerEvent name="saveMatchEvent" type="c:PeopleMatch_Evt_SaveMatch"/>
 
     <article class="slds-card slds-card_boundary slds-m-top--medium">
         <div class="slds-card__body slds-card__body_inner">
             <div class="slds-grid slds-wrap slds-m-top--medium">
                 <div class="slds-col slds-size_1-of-1">
-                    <div title="PersonHeader">
+                    <div title="PersonHeader" class="slds-align--absolute-center">
                         <div class="slds-media slds-media_center">
                             <div class="slds-media__figure">
                                 <lightning:avatar size="large" src="{!v.contactToMatch.ProfilePhoto__c}" fallbackIconName="standard:contact" alternativeText="{!v.contactToMatch.Name}"/>
                             </div>
                             <div class="slds-media__body">
                                 <p class="slds-text-heading_large">{!v.contactToMatch.Name}</p>
-                                <p class="slds-text-heading_small">{!v.contactToMatch.Account.Name}</p>
                                 <p>{!v.contactToMatch.Title}</p>
+                                <p class="slds-text-heading_small">{!v.contactToMatch.Account.Name}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="slds col slds-size--1-of-1 slds-m-top--small">
+                <div class="slds col slds-size--1-of-1 slds-m-top--small slds-align--absolute-center">
                     <p>How would you rate your relationship with {!v.contactToMatch.Name}?</p>
                 </div>
                 <div class="slds-col slds-size--1-of-1 slds-m-top--small">
-                    <div class="slds-col slds-size_1-of-1">
-                        <lightning:button label="Close Friend" class="fullWidthButton slds-m-bottom--small"/>
-                    </div>
-                    <div class="slds-col slds-size_1-of-1">
-                        <lightning:button label="Colleague" class="fullWidthButton slds-m-bottom--small"/>
-                    </div>
-                    <div class="slds-col slds-size_1-of-1">
-                        <lightning:button label="Acquaintance" class="fullWidthButton slds-m-bottom--small"/>
-                    </div>
-                    <div class="slds-col slds-size_1-of-1">
-                        <lightning:button label="I don't know this person" class="fullWidthButton slds-m-bottom--small"/>
-                    </div>
+                    <aura:iteration items="{!v.relButtonOptions}" var="btnOption" indexVar="key">
+                        <div class="slds-col slds-size_1-of-1">
+                            <lightning:button label="{!btnOption.key}" value="{!btnOption.value}" class="fullWidthButton slds-m-bottom--small" onclick="{!c.sendMatchedContact}"/>
+                        </div>
+                    </aura:iteration>
                 </div>
             </div>
         </div>
